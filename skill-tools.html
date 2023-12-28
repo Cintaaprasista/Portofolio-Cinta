@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="CintamiPrasista" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>portofolio Cinta</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="img/shortcut.png" type="image/png" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="website icon" type="png" href="asset/shortcut.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+  </head>
+  <body>
+    <!--------------------- start header --------------------->
+    <header id="header">
+      <div class="container">
+        <span class="text first_text">Welcome to</span>
+        <span class="text sec-text">My Skills</span>
+      </div>
+
+      <script>
+        const text = document.querySelector(".sec-text");
+
+        const Load = () => {
+          setTimeout(() => {
+            text.textContent = "My Skills";
+          }, 0);
+          setTimeout(() => {
+            text.textContent = "My Tools";
+          }, 4000);
+        };
+
+        Load();
+        setInterval(Load, 20000);
+      </script>
+
+      <nav class="tabs-container">
+        <a href="./index.html" class="tab">About Me</a>
+        <a href="./skill-tools.html" class="tab">Skills & Tools</a>
+        <a href="./project.html" class="tab">Projects</a>
+        <a href="./achievement.html" class="tab">Achievement</a>
+        <a href="./resume" class="tab">Resume</a>
+      </nav>
+    </header>
+    <!--------------------- end header --------------------->
+    <!------------------------ Judul  ---------------------->
+    <section class="titleSkills">
+      <span class="text">My Skills</span>
+      <div class="centered">
+        <div class="card border-left-behind">
+          <div class="shadow" style="--url: url('https://i.ibb.co/7YWdp61/full-front.png')"></div>
+          <div class="image background" style="--url: url('https://i.ibb.co/zxKLYPD/bg-front.png')"></div>
+          <div class="image cutout" style="--url: url('https://i.ibb.co/FsjbPb5/front.png')"></div>
+          <div class="content">
+            <h2>FrontEnd Dev</h2>
+            <p>Over the past year, I have gained knowledge in User Interface and User Experience Design (UI/UX), HTML, CSS, and Javascript, and applied it in the various projects I have developed.</p>
+          </div>
+        </div>
+        <div class="card border-right-behind border-bottom-behind">
+          <div class="shadow" style="--url: url('https://i.ibb.co/ZXW1zKT/fullback.png')"></div>
+          <div class="image background" style="--url: url('https://i.ibb.co/mbhLHZb/bg-back.png')"></div>
+          <div class="image cutout" style="--url: url('https://i.ibb.co/x3ZT3f7/back.png')"></div>
+          <div class="content">
+            <h2>Backend Dev</h2>
+            <p>Creating a reliable web API requires expertise in using Python as a programming language, implementing JavaScript with Node.js and Express.js, and having an understanding of using Sequelize for database operations in the API.</p>
+          </div>
+        </div>
+        <div class="card border-left-behind">
+          <div class="shadow" style="--url: url('https://i.ibb.co/pf7CP79/fulldata.png')"></div>
+          <div class="image background" style="--url: url('https://i.ibb.co/89W9f0L/bg-data.png')"></div>
+          <div class="image cutout" style="--url: url('https://i.ibb.co/D8ttLYg/data.png')"></div>
+          <div class="content">
+            <h2>Data Analyst</h2>
+            <p>Analyzing a data set with PROBLEM DEFINITION & PLANNING, DATA CLEANING, DATA ANALYSIS, and finally DATA VISUALIZATION & COMMUNICATION.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="titleSkills">
+      <span class="text">My Tools</span>
+      <div class="content">
+        <div class="info">
+          <p>I have expertise in mastering various <span class="tool-frame">tools and frameworks</span> that help in software development. Some of these include : 
+            Visual Studio Code, Node.js, GitHub, Oracle, Microsoft Excel, Adobe Ilustrator, Canva, Pentaho, Google Colab. </p>
+        </div>
+    
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+              <div>
+                <h2>Visual Studio Code</h2>
+              </div>
+            </div>
+    
+            <div class="swiper-slide">
+              <div>
+                <h2>Node.js</h2>
+              </div>
+            </div>
+    
+            <div class="swiper-slide">
+              <div>
+                <h2>GitHub</h2>
+              </div>
+            </div>
+    
+            <div class="swiper-slide">
+              <div>
+                <h2>Oracle</h2>
+              </div>
+          </div>
+            
+          <div class="swiper-slide">
+              <div>
+                <h2>Microsoft Excel</h2>
+              </div>
+          </div>
+            
+          <div class="swiper-slide">
+              <div>
+                <h2>Adobe Ilustrator</h2>
+              </div>
+          </div>
+            
+           <div class="swiper-slide">
+              <div>
+                <h2>Canva</h2>
+              </div>
+          </div>
+            
+            <div class="swiper-slide">
+              <div>
+                <h2>Pentaho</h2>
+              </div>
+          </div>
+            
+            <div class="swiper-slide">
+              <div>
+                <h2>Google Colab</h2>
+              </div>
+            </div>
+        </div>
+      </div>
+    
+    </div>
+    </section>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script><script  src="./script.js"></script>
+
+    <!--------------------- start footer ---------------------> 
+    <footer>
+		<div class="container footer-container">
+				<ul>
+					<a href="./index.html">About Me</a>
+                    <a href="./skill-tools.html">Skills & Tools</a>
+					<a href="./project.html">Projects</a>
+                    <a href="./experience">Experience</a>
+                    <a href="./Resume">Resume</a>
+				</ul>
+			</article>
+
+		</div>
+		<div class="footer-copy">
+			&copy; copyright 2023 | built with <i class="glyphicon glyphicon-heart"></i> by. <a href="https://www.linkedin.com/in/cintami-prasista-wibowo-515424280/">Cintami Prasista</a>.</p>
+		</div>
+	</footer>
+    <!--------------------- end footer --------------------->
+  </body>
+</html>

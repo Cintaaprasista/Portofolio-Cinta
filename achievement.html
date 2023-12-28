@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="CintamiPrasista" />
+    <meta
+      name="description"
+      content="This is the news about Nusantara and The World"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>portofolio Cinta</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="img/shortcut.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!--------------------- start header --------------------->
+    <header id="header">
+      <div class="container">
+        <span class="text first_text">Welcome to</span>
+        <span class="text sec-text">My Skills</span>
+      </div>
+
+      <script>
+        const text = document.querySelector(".sec-text");
+
+        const Load = () => {
+          setTimeout(() => {
+            text.textContent = "My Skills";
+          }, 0);
+          setTimeout(() => {
+            text.textContent = "My Tools";
+          }, 4000);
+        };
+
+        Load();
+        setInterval(Load, 12000);
+      </script>
+
+      <nav class="tabs-container">
+        <a href="./index.html" class="tab">About Me</a>
+        <a href="./skill-tools.html" class="tab">Skills & Tools</a>
+        <a href="./project.html" class="tab">Projects</a>
+        <a href="./achievement.html" class="tab">Achievement</a>
+        <a href="./resume" class="tab">Resume</a>
+      </nav>
+    </header>
+    <!--------------------- end header --------------------->
+    <!-- Judul  -->
+    <section class="titleSkills" data-aos="fade-up">
+      <span class="text">My Skills</span>
+    </section>
+
+    <section class="titleSkills" data-aos="fade-up">
+      <span class="text">My Tools</span>
+    </section>
+    <script src="js/main.js"></script>
+
+
+    <!--------------------- start footer ---------------------> 
+    <footer>
+      <div class="container footer-container">
+          <ul>
+            <a href="./index.html">About Me</a>
+                      <a href="./skill-tools.html">Skills & Tools</a>
+            <a href="./project.html">Projects</a>
+                      <a href="./experience">Experience</a>
+                      <a href="./Resume">Resume</a>
+          </ul>
+        </article>
+  
+      </div>
+      <div class="footer-copy">
+        &copy; copyright 2023 | built with <i class="glyphicon glyphicon-heart"></i> by. <a href="https://www.linkedin.com/in/cintami-prasista-wibowo-515424280/">Cintami Prasista</a>.</p>
+      </div>
+    </footer>
+      <!--------------------- end footer --------------------->
+  </body>
+</html>

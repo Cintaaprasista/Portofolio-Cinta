@@ -1,106 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="author" content="Group 30">
-	<meta name="description" content="This is the news about Nusantara and The World">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>portofolio Cinta</title>
-	<link rel="stylesheet" href="style/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-	<link rel="icon" href="img/shortcut.png" type="image/png">
-  <link rel="shortcut icon" href="img/shortcut.png" type="image/png">
-</head>
-<body class="body">
-	<!--------------------- start header --------------------->
-	<nav>
-		<div class="navigation nav-container">
-				<a href="./index.html" class="logo">
-				<ul class="nav-link">
-					<li><a href="./index.html">About Me</a></li>
-                    <li><a href="./skill-tools.html">Skills & Tools</a></li>
-					<li><a href="./project.html">Project</a></li>
-                    <li><a href="./experience">Experience</a></li>
-                    <li><a href="./Resume">Resume</a></li>
-
-
-					<li>
-						<div class="nav-profile">
-							<div class="profile-img">
-								<img src="img/Konkes_Cinta.png" alt="">
-							</div>
-							<ul>
-								<li><a href="./dokumentasi.html">Dokumentasi</a></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="CintamiPrasista" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>portofolio Cinta</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="img/shortcut.png" type="image/png" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="website icon" type="png" href="asset/shortcut.png">
+  </head>
+  <body>
+    <!--------------------- start header --------------------->
+    <header id="header">
+		<div class="container">
+			<span class="text first_text">Welcome to</span>
+			<span class="text sec-text">My Portfolio</span>
 		</div>
-	</nav> 
-	<!--------------------- end header --------------------->
-
-
-  <!--------------------- Start Banner ------------------------>
-  <section class="jumbotron-container"> 
-	<div class="jumbotron">
-		<div class="jumbotron-text">
-			<h1 class="jumbo">Hello Semua 😁!</h1>
-			<p class="para"> I'm Cintami Prasista <br>Information Systems student at Universitas Pembangunan Nasional 'Veteran" Jawa Timur</p>
-			<button><a href="skill-tools.html">My Skills</a></button>
-		</div>
-	</div>
-  </section>
-  <!--------- End Banner ----------->
-
-	<!--------------------- start main --------------------->
-	<section class="post">
-		<!-- Recomendation Article -->
-		<div class="kumpulan_artikel">
-			<div class="recomendation-article">
-				<div class="judul-recomendation">
-					<h3>About Me</h3>
-					<p>Halo, nama saya Cintami Prasista Wibowo, 
-						Saya adalah seorang Mahasiswa Sistem Informasi dengan latar belakang di bidang IT. Selama 2 tahun, saya telah berfokus pada [Bidang Spesialisasi Anda], membangun keterampilan dan wawasan yang mendalam dalam [Teknologi atau Platform yang Anda Kuasai].
-						
-						Dalam perjalanan karir saya, saya telah bekerja dengan berbagai klien dan proyek, mulai dari [Deskripsi Proyek 1] hingga [Deskripsi Proyek 2]. Saya memiliki pengalaman dalam [Keterampilan atau Teknologi yang Anda Terapkan], dan telah berhasil menyediakan solusi yang inovatif dan efektif.
-						
-						Mengapa Memilih Saya?
-						Keahlian saya mencakup [Daftar Keterampilan Anda], dan saya selalu berusaha untuk tetap terupdate dengan tren terkini dalam industri. Saya percaya pada kolaborasi dan komunikasi yang efektif, memastikan bahwa setiap proyek berjalan lancar dan mencapai tujuan yang diinginkan.
-						
-						Portofolio Saya
-						Jelajahi portofolio saya untuk melihat proyek-proyek sebelumnya dan hasil kerja saya. Saya bangga dengan setiap karya yang telah saya hasilkan, dan saya senang berbagi pengalaman dan pengetahuan saya dengan Anda.
-						
-						Mari Berkolaborasi
-						Jika Anda memiliki proyek yang menarik atau ide yang ingin Anda diskusikan, jangan ragu untuk menghubungi saya. Saya selalu terbuka untuk peluang baru dan percaya bahwa setiap proyek adalah kesempatan untuk belajar dan tumbuh.
-						
-						Terima kasih telah mengunjungi website portfolio saya. Saya berharap dapat bekerja sama dengan Anda dalam menciptakan solusi yang luar biasa dan memuaskan.
-						
-						Salam,
-						Cintami Prasista W</p>
-				</div>
-		
-	</section>
-	<!--------------------- end main --------------------->
 	
-
-	<!--------------------- start footer --------------------->
-	<footer>
-		<div class="footer-social">
-            <a href="https://www.linkedin.com/in/cintami-prasista-wibowo-515424280/"><i class="fa-brands fa-linkedin"></i></a>
-			<a href="https://github.com/Cintaaprasista"><i class="fa-brands fa-github"></i></a>
-			<a href="https://www.instagram.com/cintaaprasista/"><i class="fa-brands fa-square-instagram"></i></a>
-           	<a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+		<script>
+			const text = document.querySelector(".sec-text");
+	
+			const Load = () => {
+				setTimeout(() => {
+					text.textContent = "My Portfolio";
+				}, 0);
+			}
+	
+			Load();
+			setInterval(Load, 12000);
+		</script>    
+   
+      <nav class="tabs-container">
+        <a href="./index.html" class="tab">About Me</a>
+        <a href="./skill-tools.html" class="tab">Skills & Tools</a>
+        <a href="./project.html" class="tab">Projects</a>
+        <a href="./achievement.html" class="tab">Achievement</a>
+        <a href="./resume" class="tab">Resume</a>
+      </nav>
+    </header>
+	<!--------------------- end header --------------------->
+    <main>
+		
 		</div>
+      <section class="section">
+        <div class="main">
+            <div class="detail"><!---Cinta -->
+                <h1><span>Hi</span> <br> I'm <span style="color:#00E8F8;">Cintami Prasista</span></h1>
+                <h2>Information Systems student <br> at Universitas Pembangunan Nasional 'Veteran" Jawa Timur. </h2>
+				<p></p>
+                <div class="social">
+                    <a href="#"><i class="bi bi-github"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="images">
+				<img src="/asset/Konkes_Cinta.png" alt="" width="100%">
+            </div>
+        </div>
+      </section>
+    
+    </main>
+    
+	<!--------------------- start footer ---------------------> 
+    <footer>
 		<div class="container footer-container">
-			<article class="have-logo">
 				<ul>
-					<li><a href="./index.html">About Me</a></li>
-                    <li><a href="./skill-tools.html">Skills & Tools</a></li>
-					<li><a href="./project.html">Project</a></li>
-                    <li><a href="./experience">Experience</a></li>
-                    <li><a href="./Resume">Resume</a></li>
+					<a href="./index.html">About Me</a>
+                    <a href="./skill-tools.html">Skills & Tools</a>
+					<a href="./project.html">Projects</a>
+                    <a href="./experience">Experience</a>
+                    <a href="./Resume">Resume</a>
 				</ul>
 			</article>
 
@@ -109,9 +86,7 @@
 			&copy; copyright 2023 | built with <i class="glyphicon glyphicon-heart"></i> by. <a href="https://www.linkedin.com/in/cintami-prasista-wibowo-515424280/">Cintami Prasista</a>.</p>
 		</div>
 	</footer>
-	<!--------------------- end footer --------------------->
-
-	<!--------------------- script --------------------->
-	<script src="js/main.js"></script>
-</body>
+    <!--------------------- end footer --------------------->
+    <script src="js/main.js"></script>
+  </body>
 </html>
